@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Challenge 1 - One</title>
+</head>
+
+<body>
+    <header>
+        <img class="icon" src="./img/logo.png" alt="ícone alura">
+    </header>
+    <main>
+
+        <section class="input-area">
+
+            <textarea name="input-text" class="input-text" cols="30" rows="10"
+                placeholder="Digite seu texto" autofocus></textarea>
+            <div class="aviso">
+
+                <img src="./img/inficon.svg" alt="icone de aviso">
+                <p id="text-aviso">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <button class="buttons" id="encrypt-button" onclick="encryptBtn()">Criptografar</button>
+            <button class="buttons" id="decrypt-button" onclick="decryptBtn()">Descriptografar</button>
+        </section>
+
+        <section class="output-area">
+            
+            <textarea name="output-text" class="output-text" cols="30" rows="10"></textarea>
+
+                
+                <div class="media-temp">
+                    <img class=empty-image src="./img/menino.svg" alt="menino com lupa">
+                    
+                    <div class="empty-message">
+                        
+                        <p id="p1">Nenhuma mensagem encontrada</p>
+                        <p id="p2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                        
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button class="copyBtn" onclick="copyBtn()">Copiar</button>
+                </div>
+            </section>
+    </main>
+    <script src="./js/script.js"></script>
+    
+</body>
+
+</html>

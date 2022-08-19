@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    padding: 2em 0 0 3em;
+    background: #F3F5FC;
+}
+
+.input-area {
+    padding: 4vh 0 2vh 4vw;
+    vertical-align: top;
+    margin: 2em 0 1em 2em;
+    display: inline-block;
+    width: 60%;
+    height: 60em;
+}
+
+.input-text {
+
+    font-size: 34px;
+    color: #0A3871;
+    background: #F3F5FC;
+    width: 90%;
+    height: 80%;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.input-text::placeholder {
+    color: #0A3871;
+}
+
+.aviso p {
+    font-size: small;
+    display: inline-block;
+}
+
+.aviso img {
+    display: inline;
+    vertical-align: bottom;
+}
+
+.output-area {
+    display: inline-block;
+    background: white;
+    width: 22vw;
+    height: 80vh;
+    border-radius: 2em;
+    box-shadow: 10px 10px 10px 0 #0000003f;
+}
+
+.output-text {
+    font-size: 24px;
+    margin: auto;
+    padding: 2em 0 0 0;
+    width: 80%;
+    height: 80%;
+    border: none;
+    resize: none;
+    outline: none;
+    color: #0A3871;
+    display: none;
+}
+
+.empty-image {
+    width: 20vw;
+    padding: 20vh 0 1vh 1vw;
+    margin: 0 auto;
+}
+
+.empty-message {
+    margin-top: 2em;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(66, 66, 66);
+}
+
+#p1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#p2 {
+    margin-top: 1em;
+    font-size: 12px;
+}
+
+
+.buttons {
+    margin-top: 1em;
+    display: inline-block;
+    width: 25vw;
+    height: 7vh;
+    border-radius: 2em;
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttons:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+#encrypt-button {
+    background: #0A3871;
+    color: #F3F5FC;
+}
+
+#decrypt-button {
+    background: #F3F5FC;
+    color: #0A3871;
+    border-color: #0A3871;
+    margin-left: 3vw;
+}
+.button-area{
+    width: 100%;
+    height: 8%;
+    vertical-align: bottom;
+    display: flex;
+}
+.copyBtn{
+    font-size: 20px;
+    color: #0A3871;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    width: 80%;
+    height: 70%;
+    border-radius: 1em;
+    border: #0A3871 1px solid;
+    display: none;
+    
+}
+.copyBtn:hover{
+    transform: scale(105%);
+}
+
+@media screen and (max-width: 900px){
+    .input-area{
+        display: block;
+    }
+    .buttons{
+        font-size: 95%;
+    }
+    .output-area{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .empty-image {
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 480px){
+    html{
+        padding: 2em 0 0 0;
+    }
+    .buttons {
+        font-size: 70%;
+    }
+    .output-area{
+        margin: 0 0 0 10%;
+    }
+}
